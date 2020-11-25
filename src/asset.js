@@ -17,12 +17,9 @@ class WastAsset extends Asset {
     const module = wabt.parseWat(filename, source);
     const { buffer } = module.toBinary({ write_debug_names: false });
 
-    return [
-      {
-        type: 'wasm',
-        value: new Buffer(buffer)
-      }
-    ]
+    return {
+      wasm: buffer
+    }
   }
 }
 
