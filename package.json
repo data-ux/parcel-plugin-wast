@@ -1,0 +1,11 @@
+{
+    "name": "parcel-plugin-wast",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "author": "Jan Wolski",
+    "license": "MIT",
+    "dependencies": {
+      "parcel-bundler": "^1.6.2",
+      "wabt": "^1.0.20"
+    }
+  }
